@@ -1,0 +1,62 @@
+
+Version 0.6 released on 2003-09-11. Changes from version 0.52:
+
+        * switched from RC4-160 to AES-CBC-128 + HMAC-SHA1
+
+        * some minor bugfixes & code cleanup
+
+Version 0.52 released on 2003-03-24. Changes from version 0.51:
+
+        * improved the server side of the connect-back mode
+          so that it resolves the client hostname
+
+Version 0.51 released on 2003-03-20. Changes from version 0.5:
+
+        * fixed a bug on the client side of the connect-back mode
+
+        * cleaned up the packet encryption layer
+
+Version 0.5 released on 2003-03-20. Changes from version 0.42:
+
+        * added "connect-back" mode, so as to bypass firewalls
+
+        * improved the IV generation algorithm
+
+Version 0.42 released on 2003-02-20. Changes from version 0.41:
+
+        * switched from MD5 to SHA-1
+
+        * data is encrypted with 160-bit RC4
+
+        * increased IV length to 128 bits
+
+Version 0.41 released on 2003-02-15. Changes from version 0.4:
+
+        * removed a few redundant comments
+
+Version 0.4 released on 2003-02-14. Changes from version 0.31:
+
+        * data is now encrypted using strong 128-bit RC4
+
+        * added optimization flags
+
+Version 0.31 released on 2003-01-24. Changes from version 0.3:
+
+        * slightly enhanced the data streams handling code,
+          thanks to the select() system call
+
+Version 0.3 released on 2003-01-22. Changes from version 0.2:
+
+        * fixed a bug which could cause premature termination
+          of the server or the client under heavy network load
+
+        * added support for Cygwin and HP-UX
+
+Version 0.2 released on 2003-01-15. Changes from version 0.1:
+
+        * the code is now architecture independant
+
+        * added support for *BSD, OSF, SunOS and IRIX
+
+Version 0.1 released on 2002-12-01
+
